@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Your Cool Website</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Roboto', sans-serif;
+            line-height: 1.6;
+            background-color: #f4f4f4;
+            color: #333;
+        }
+
+        /* Navigation Bar */
+        nav {
+            background-color: #333;
+            padding: 1rem 2rem;
+            position: sticky;
+            top: 0;
+            width: 100%;
+            z-index: 100;
+        }
+
+        nav ul {
+            display: flex;
+            justify-content: flex-end;
+            list-style: none;
+        }
+
+        nav ul li {
+            margin-left: 20px;
+        }
+
+        nav ul li a {
+            text-decoration: none;
+            color: #fff;
+            font-weight: bold;
+            transition: color 0.3s ease;
+        }
+
+        nav ul li a:hover {
+            color: #ff6f61;
+        }
+
+        /* Hero Section */
+        .hero {
+            background: url('https://source.unsplash.com/random/1600x900') no-repeat center center/cover;
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            color: #fff;
+        }
+
+        .hero h1 {
+            font-size: 4rem;
+            font-weight: 700;
+        }
+
+        .hero p {
+            font-size: 1.5rem;
+            margin-top: 1rem;
+        }
+
+        /* About Section */
+        #about {
+            padding: 4rem 2rem;
+            text-align: center;
+        }
+
+        #about h2 {
+            font-size: 2.5rem;
+            margin-bottom: 1.5rem;
+        }
+
+        #about p {
+            font-size: 1.2rem;
+            max-width: 800px;
+            margin: 0 auto;
+            color: #555;
+        }
+
+        /* Portfolio Section */
+        #portfolio {
+            background-color: #f4f4f4;
+            padding: 4rem 2rem;
+            text-align: center;
+        }
+
+        #portfolio h2 {
+            font-size: 2.5rem;
+            margin-bottom: 2rem;
+        }
+
+        .portfolio-grid {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            flex-wrap: wrap;
+        }
+
+        .portfolio-item {
+            width: 300px;
+            height: 200px;
+            background: #333;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            color: white;
+            font-size: 1.5rem;
+        }
+
+        /* Services Section */
+        #services {
+            padding: 4rem 2rem;
+            background-color: #fff;
+            text-align: center;
+        }
+
+        #services h2 {
+            font-size: 2.5rem;
+            margin-bottom: 2rem;
+        }
+
+        .services-grid {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            flex-wrap: wrap;
+        }
+
+        .service-item {
+            width: 300px;
+            padding: 2rem;
+            border: 1px solid #ddd;
+            border-radius: 8px;
+            text-align: center;
+        }
+
+        /* Contact Section */
+        #contact {
+            padding: 4rem 2rem;
+            background-color: #f4f4f4;
+            text-align: center;
+        }
+
+        #contact h2 {
+            font-size: 2.5rem;
+            margin-bottom: 1.5rem;
+        }
+
+        #contact form {
+            max-width: 600px;
+            margin: 0 auto;
+        }
+
+        #contact input, #contact textarea {
+            width: 100%;
+            padding: 1rem;
+            margin: 10px 0;
+            border: 1px solid #ddd;
+            border-radius: 4px;
+        }
+
+        #contact button {
+            padding: 1rem 2rem;
+            background-color: #333;
+            color: white;
+            border: none;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+
+        #contact button:hover {
+            background-color: #ff6f61;
+        }
+
+        /* Footer */
+        footer {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 1rem 0;
+        }
+
+        footer p {
+            margin: 0;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Navigation -->
+    <nav>
+        <ul>
+            <li><a href="#about">About</a></li>
+            <li><a href="#portfolio">Portfolio</a></li>
+            <li><a href="#services">Services</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div>
+            <h1>Welcome to My Website </h1>
+            <h2>YORALEXANDER</h2>
+            <p>Design, Develop, Inspire</p>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about">
+        <h2>About Me</h2>
+        <p>Hello! I'm a passionate developer and designer who loves to create modern and engaging websites. I specialize in creating unique user experiences with a focus on simplicity and functionality.</p>
+    </section>
+
+    <!-- Portfolio Section -->
+    <section id="portfolio">
+        <h2>Portfolio</h2>
+        <div class="portfolio-grid">
+            <div class="portfolio-item">Project 1</div>
+            <div class="portfolio-item">Project 2</div>
+            <div class="portfolio-item">Project 3</div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section id="services">
+        <h2>Services</h2>
+        <div class="services-grid">
+            <div class="service-item">
+                <h3>Web Design</h3>
+                <p>Crafting beautiful and modern designs that work on all devices.</p>
+            </div>
+            <div class="service-item">
+                <h3>Development</h3>
+                <p>Building fast and responsive websites with the latest technologies.</p>
+            </div>
+            <div class="service-item">
+                <h3>Branding</h3>
+                <p>Helping you build a strong and memorable brand identity.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact">
+        <h2>Contact Me</h2>
+        <form>
+            <input type="text" name="name" placeholder="Your Name" required>
+            <input type="email" name="email" placeholder="Your Email" required>
+            <textarea name="message" rows="5" placeholder="Your Message" required></textarea>
+            <button type="submit">Send Message</button>
+        </form>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2024 Your Cool Website | All rights reserved</p>
+    </footer>
+
+</body>
+</html>
